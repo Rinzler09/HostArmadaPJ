@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<!-- DISEÑADO POR MILTON NOEL PAZ FONSECA-->
+
+<head>
+    <title>Registro Estonia</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Milton Paz">
+    <meta name="description" content="Hosting Sitio Web Estonia">
+    <meta name="keywords" content="hosting, Estonia, html">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/jpg" href="images/faviconHosting.jpg">
+
+    <style>
+        body {
+            background-image: url('images/fondoPrincipal.avif');
+            background-repeat: repeat;
+        }
+
+        .fondoPrincipal {
+            display: flex;
+            flex-direction: column;
+            background-color: cornsilk;
+            margin-top: 30px;
+            margin-right: 15%;
+            margin-bottom: 30px;
+            margin-left: 15%;
+        }
+
+        .menuPrincipal {
+            position: sticky;
+            top: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            line-height: 40px;
+            background-color: cornsilk;
+
+        }
+
+        .menuPrincipal img {
+            max-width: 50%;
+            height: 70px;
+        }
+
+        .menuPrincipal a {
+
+            text-decoration: none;
+            color: darkcyan;
+            padding: 40px 25px 40px 25px;
+            font-size: 20px;
+        }
+
+        .menuPrincipal ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .menuPrincipal a:hover {
+            background-color: bisque;
+            border-radius: 30%;
+
+        }
+
+        #btnRegistrar {
+            background-color: darkblue;
+            color: white;
+            width: 120px;
+            height: 40px;
+            border-radius: 10%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+        }
+
+        #btnLimpiar {
+            background-color: darkblue;
+            color: white;
+            width: 120px;
+            height: 40px;
+            border-radius: 10%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+        }
+
+        #btnRegistrar:hover {
+            width: 130px;
+            height: 50px;
+        }
+
+        #btnLimpiar:hover {
+            width: 130px;
+            height: 50px;
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 60px;
+            padding-bottom: 100px;
+            margin: auto;
+            width: 80%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+
+        }
+
+        .formulario input {
+            margin-top: 10px;
+        }
+
+        .piedepagina {
+            display: flex;
+            flex: row;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: white;
+            margin: auto;
+        }
+
+        .piedepaginahijo {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            padding: 20px 0px 20px 0px;
+            text-align: center;
+            color: black;
+            flex: 1 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="fondoPrincipal">
+
+        <div class="menuPrincipal">
+            <img src="images/hostarmada_logo.png">
+            <ul>
+                <li>
+                    <a href="index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="index.html">TOUR</a>
+                </li>
+                <li>
+                    <a href="index.html">PRODUCT</a>
+                </li>
+                <li>
+                    <a href="index.html">PRICING</a>
+                </li>
+                <li>
+                    <a href="index.html">CONTACT</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="formulario">
+            <form id="frmRegistro" name="frmRegistro" method="POST" action="formulario.php">
+
+                <label for="txtNombreRegistro">NOMBRE COMPLETO:</label>
+                <input style="margin-left: 20px;" type="text" id="txtNombreRegistro" name="txtNombreRegistro" required
+                    autofocus pattern="[A-Z ]{10,60}" title="Solo acepta letras mayusculas (>=10, <=60)"><br><br>
+
+                <label for="txtCorreoRegistro">CORREO:</label>
+                <input style="margin-left: 110px;" type="text" id="txtCorreoRegistro" name="txtCorreoRegistro"
+                    required><br><br>
+
+                <label for="txtComentariosRegistro">COMENTARIOS:</label><br>
+                <textarea style="margin-left: 180px;" id="txtComentariosRegistro" name="txtComentariosRegistro" required
+                    cols="40" rows="7" minlength="1" title="No Puede dejar este campo vacio."></textarea><br><br><br>
+
+                <input style="margin: 0px 40px 0px 60px;" type="reset" id="btnLimpiar" name="btnLimpiar"
+                    value="LIMPIAR">
+                <input type="submit" id="btnRegistrar" name="btnRegistrar" value="REGISTRAR">
+
+            </form>
+
+        </div>
+
+        <div class="piedepagina">
+
+            <div class="piedepaginahijo">
+                <p> Derechos Reservados 2023</p>
+            </div>
+
+            <div class="piedepaginahijo">
+                <p> Sitio Web con Motivos Educativos </p>
+            </div>
+
+            <div class="piedepaginahijo">
+                <p> Diseño por Milton Noel Paz </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

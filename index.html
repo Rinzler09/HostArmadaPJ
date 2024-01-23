@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html>
+<!-- DISEÑADO POR MILTON NOEL PAZ FONSECA-->
+
+<head>
+    <title>Hosting Estonia</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Milton Paz">
+    <meta name="description" content="Hosting Sitio Web Estonia">
+    <meta name="keywords" content="hosting, Estonia, html">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/jpg" href="images/faviconHosting.jpg">
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url('images/fondoPrincipal.avif');
+            background-repeat: repeat;
+        }
+
+        h2 {
+            color: darkslateblue;
+            background-color: darkseagreen;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+        }
+
+        .fondoPrincipal {
+            display: flex;
+            flex-direction: column;
+            background-color: cornsilk;
+            margin-top: 30px;
+            margin-right: 5%;
+            margin-bottom: 30px;
+            margin-left: 5%;
+        }
+
+        .menuPrincipal {
+            position: sticky;
+            top: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            line-height: 40px;
+            background-color: cornsilk;
+
+        }
+
+        .menuPrincipal img {
+            max-width: 50%;
+            height: 70px;
+        }
+
+
+        .menuPrincipal a {
+
+            text-decoration: none;
+            color: darkcyan;
+            padding: 40px 25px 40px 25px;
+            font-size: 20px;
+        }
+
+        .menuPrincipal ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .menuPrincipal a:hover {
+            background-color: bisque;
+            border-radius: 30%;
+
+        }
+
+        #btnRegistro {
+            background-color: chocolate;
+            color: white;
+            width: 120px;
+            height: 40px;
+            border-radius: 15%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+        }
+
+        #btnRegistro:hover {
+            width: 130px;
+            height: 50px;
+        }
+
+        .tour {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+            width: 80%;
+            margin: auto;
+
+        }
+
+        .tourhijo {
+            max-width: calc((90%-40px)/2);
+            padding: 50px 20px 50px 20px;
+            text-align: center;
+            color: black;
+            flex: 1 600px;
+            font-size: 20px;
+
+        }
+
+        .tourhijo img {
+            width: 600px;
+            height: auto;
+            border-radius: 15%;
+            box-shadow: 0px 0px 5px 5px blueviolet;
+        }
+
+        .tourhijo a {
+            text-decoration: none;
+            color: darkgreen;
+            background-color: navajowhite;
+            border-style: double;
+        }
+
+        .tourhijo a:hover {
+            font-size: larger;
+        }
+
+        .tablainfo {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+            width: 80%;
+            margin: auto;
+
+        }
+
+        .tablainfohijo {
+            max-width: calc((90%-40px)/2);
+            padding: 150px 35px 110px 35px;
+            text-align: center;
+            color: black;
+            flex: 1 600px;
+            font-size: 20px;
+
+        }
+
+        .tablainfohijo p {
+            font-size: 14px;
+            color: darkblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: justify;
+
+        }
+
+        .tablainfohijo table {
+            color: darkblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+        }
+
+        .tablainfohijo iframe {
+            box-shadow: 0px 0px 15px 5px blueviolet;
+
+        }
+
+        .beneficios {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+            width: 80%;
+
+        }
+
+        .beneficioshijo {
+            max-width: calc((90%-40px)/2);
+            padding: 110px 30px 110px 30px;
+            text-align: center;
+            color: black;
+            flex: 1 300px;
+            font-size: 20px;
+
+        }
+
+        .beneficioshijo img {
+            height: 200px;
+            width: auto;
+            border-radius: 15%;
+
+        }
+
+        .beneficioshijo p {
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: darkgrey;
+            color: darkblue;
+            border-radius: 5%;
+            height: 350px;
+
+        }
+
+        .beneficioshijo p:hover {
+            box-shadow: 0px 0px 5px 5px blueviolet;
+            height: 380px;
+        }
+
+        .opiniones {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+            width: 80%;
+
+        }
+
+        .opinioneshijo {
+            max-width: calc((90%-40px)/2);
+            padding: 110px 30px 110px 30px;
+            text-align: center;
+            color: black;
+            flex: 1 300px;
+            font-size: 20px;
+
+        }
+
+        .opinioneshijo img {
+            height: 90px;
+            width: auto;
+            border-radius: 50%;
+
+        }
+
+        .opinioneshijo p {
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: aliceblue;
+            color: darkblue;
+            border-radius: 25%;
+            height: 115%;
+            width: 100%;
+            box-shadow: 0px 0px 5px 5px blueviolet;
+        }
+
+        .insignias {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+            width: 80%;
+
+        }
+
+
+        .insigniashijo img {
+            height: 120px;
+            width: auto;
+
+        }
+
+        .insigniashijo img:hover {
+            height: 140px;
+            width: auto;
+
+        }
+
+        .insigniashijo {
+            max-width: calc((90%-40px)/2);
+            padding: 110px 10px 110px 10px;
+            text-align: center;
+            color: black;
+            flex: 1 300px;
+            font-size: 20px;
+
+        }
+
+        .product {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+            width: 75%;
+
+        }
+
+        .producthijo {
+            max-width: calc((90%-40px)/2);
+            padding: 110px 100px 110px 100px;
+            text-align: center;
+            flex: 1 400px;
+
+        }
+
+        .producthijo img {
+            height: 100px;
+            width: auto;
+
+        }
+
+        .producthijo p {
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: palegoldenrod;
+            color: darkblue;
+            border-radius: 10%;
+            height: 105%;
+            width: auto;
+            box-shadow: 0px 0px 5px 5px blueviolet;
+        }
+
+        .producthijo p:hover {
+            height: 120%;
+            width: auto;
+            box-shadow: 0px 0px 5px 5px lightblue;
+        }
+
+        .planes {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+            width: 71%;
+
+        }
+
+        .planeshijo {
+            max-width: calc((90%-40px)/2);
+            padding: 110px 10px 110px 10px;
+            text-align: center;
+            flex: 1 200px;
+
+        }
+
+        .planeshijo img {
+            height: 100px;
+            width: auto;
+
+        }
+
+        .planeshijo ul {
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: ghostwhite;
+            color: darkblue;
+            border-radius: 10%;
+            height: 100%;
+            width: 70%;
+            box-shadow: 0px 0px 5px 5px blueviolet;
+        }
+
+        .planeshijo ul:hover {
+            height: 105%;
+            box-shadow: 0px 0px 5px 5px lightblue;
+        }
+
+        #btnComenzar1 {
+            background-color: yellowgreen;
+            color: black;
+            width: 120px;
+            height: 30px;
+            border-radius: 10%;
+        }
+
+        #btnComenzar1:hover {
+            width: 130px;
+            height: 40px;
+        }
+
+        #btnComenzar2 {
+            background-color: yellowgreen;
+            color: black;
+            width: 120px;
+            height: 30px;
+            border-radius: 10%;
+        }
+
+        #btnComenzar2:hover {
+            width: 130px;
+            height: 40px;
+        }
+
+        #btnComenzar3 {
+            background-color: yellowgreen;
+            color: black;
+            width: 120px;
+            height: 30px;
+            border-radius: 10%;
+        }
+
+        #btnComenzar3:hover {
+            width: 130px;
+            height: 40px;
+        }
+
+        #btnComenzar4 {
+            background-color: yellowgreen;
+            color: black;
+            width: 120px;
+            height: 30px;
+            border-radius: 10%;
+        }
+
+        #btnComenzar4:hover {
+            width: 130px;
+            height: 40px;
+        }
+
+        .contactenos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+            width: 80%;
+
+        }
+
+        .contactenoshijo {
+            max-width: calc((90%-40px)/2);
+            padding: 110px 30px 110px 30px;
+            flex: 1 200px;
+
+        }
+
+        .contactenoshijo img {
+            height: 70px;
+            width: auto;
+
+        }
+
+        .contactenoshijo p {
+            text-align: center;
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: darkblue;
+            height: auto;
+            width: 100%;
+
+        }
+
+        .contactenoshijo h3 {
+            color: darkslateblue;
+            text-align: center;
+            background-color: blanchedalmond;
+            border-style: ridge;
+        }
+
+        #btnChat {
+            background-color: lightcyan;
+            color: black;
+            width: 200px;
+            height: 30px;
+            border-radius: 10%;
+        }
+
+        #btnChat:hover {
+            width: 210px;
+            height: 40px;
+        }
+
+        .mapa iframe {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+            width: 60%;
+            padding-bottom: 100px;
+
+        }
+
+        .piedepagina {
+            display: flex;
+            flex: row;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: white;
+            margin: auto;
+        }
+
+        .piedepaginahijo {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            padding: 20px 40px 20px 40px;
+            text-align: center;
+            color: black;
+            flex: 1 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fondoPrincipal">
+
+        <div class="menuPrincipal">
+            <img src="images/hostarmada_logo.png">
+            <ul>
+                <li>
+                    <a href="index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="#tour">TOUR</a>
+                </li>
+                <li>
+                    <a href="#product">PRODUCT</a>
+                </li>
+                <li>
+                    <a href="#pricing">PRICING</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+                <li>
+                    <a href="registro.html">
+                        <input type="button" id="btnRegistro" name="btnRegistro" value="REGISTRO">
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <a name="tour"></a>
+        <h2>UN TOUR POR NUESTRA PAGINA DE HOSTING!</h2>
+        <div class="tour">
+            <div class="tourhijo">
+                <img src="images/Rates.png">
+
+            </div>
+            <div class="tourhijo">
+                <p style="color:darkblue">
+                    Nos ubicamos en la posicion numero 2 de la lista de Hostings en Estonia con aproximadamente 1,000
+                    calificaciones sobre nuestro servicio, con una mayoria de calificaciones positivas, aparte de
+                    Estonia brindamos servicios en paises como Estados Unidos, Paises Bajos, Alemania, etc.
+                </p><br>
+                <p>
+                    <a href="https://hostarmada.com" target="_blank">Mas Sobre Nosotros</a>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="tablainfo">
+            <div class="tablainfohijo">
+                <table border="2" bordercolor="blueviolet" align="center">
+                    <caption>
+                        <b>CARACTERISTICAS DE HOST-ARMADA<br><br></b>
+                    </caption>
+                    <tr>
+                        <th>TIPOS DE SITIO WEB</th>
+                        <th>UNICO</th>
+                        <th>ILIMITADO</th>
+                        <th>ILIMITADO PLUS</th>
+                    </tr>
+                    <tr>
+                        <th>ALMACENAMIENTO</th>
+                        <td>15 GB</td>
+                        <td>30 GB</td>
+                        <td>40 GB</td>
+                    </tr>
+                    <tr>
+                        <th>MANEJO DE DNS</th>
+                        <td>SI APLICA</td>
+                        <td>SI APLICA</td>
+                        <td>SI APLICA</td>
+                    </tr>
+                    <tr>
+                        <th>PROTECCION CONTRA DE MALWARE</th>
+                        <td>SI APLICA</td>
+                        <td>SI APLICA</td>
+                        <td>SI APLICA</td>
+                    </tr>
+
+                    <tr>
+                        <th>RAM</th>
+                        <td>2 GB</td>
+                        <td>4 GB</td>
+                        <td>6 GB</td>
+                    </tr>
+
+                    <tr>
+                        <th>ESTIMADO DE VISITANTES POR MES</th>
+                        <td>30,000</td>
+                        <td>60,000</td>
+                        <td>120,000</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="tablainfohijo">
+                <p>
+                    <b>SI NECESITAS SABER MAS INFORMACION SOBRE PORQUE ES NECESARIO QUE TENGAS NUESTRO HOSTING, ENTONCES
+                        PUEDES VER ESTE VIDEO!
+                    </b>
+                </p><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yihrbcnK5-Y"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <h2>NUESTROS MEJORES BENEFICIOS</h2>
+        <div class="beneficios">
+            <div class="beneficioshijo">
+                <p>
+                    <img src="images/server.png"><br><br>
+                    El bajo número de clientes que mantenemos para cada uno de nuestros servidores de alojamiento web
+                    compartido. Esto reduce el riesgo de que un cliente abusivo afecte la salud del servidor y, por lo
+                    tanto, provoque un rendimiento deficiente para los demás clientes.
+
+                </p>
+            </div>
+
+            <div class="beneficioshijo">
+                <p>
+                    <img src="images/highSpeed.png"><br><br>
+                    El tiempo de actividad del 99,9% que se logra gracias a la tecnología Cloud SSD que utilizamos.
+                    La alta velocidad que disfrutan los sitios web alojados en nuestros paquetes.
+                </p>
+
+            </div>
+
+            <div class="beneficioshijo">
+                <p>
+                    <img src="images/lowCost.png"><br><br>
+                    Descubre la diferencia con nuestro hosting asequible y de alto rendimiento. Supera a la competencia
+                    con precios competitivos y características excepcionales.
+                </p>
+            </div>
+
+        </div>
+
+        <h2>LO QUE OPINAN NUESTROS CLIENTES SOBRE NOSOTROS</h2>
+        <div class="opiniones">
+
+            <div class="opinioneshijo">
+
+                <p>
+                    <img src="images/LauraKezena.jpg"><br>
+                    Soporte rápido en vivo y real 24/7. Cuentan con personal propio capacitado no subcontratado de
+                    apoyo. Estamos usando alojamiento vps desde hace unos meses y funciona de maravilla.<br><br>
+                    <b>-Laura Kezena</b>
+
+                </p>
+            </div>
+
+            <div class="opinioneshijo">
+                <p>
+                    <img src="images/JanSmeets.jpg"><br>
+                    Estoy con 5 sitios web ahora durante 4 meses con Host Armada y puedo decir que estoy muy contento
+                    con esa decisión. Todos mis deseos se han cumplido como Estabilidad, Velocidad y
+                    Seguridad.<br><br>-<b>Jan Smeets</b>
+            </div>
+
+            <div class="opinioneshijo">
+                <p>
+                    <img src="images/ImriSavige.jpg"><br>
+                    La calidad del servicio es un chat en vivo muy bueno y oportuno. Especialmente el precio de
+                    descuento del 70% es muy impresionante. Recomendaré a más amigos que usen el servicio de
+                    Hostarmada.<br><br>-<b>Imri Savige</b>
+                </p>
+            </div>
+
+        </div>
+
+        <h3 style="color:darkslateblue; text-align: center;
+        background-color:blanchedalmond; border-style: ridge;">INSIGNIAS POR NUESTRO EXCELENTE SERVICIO</h3>
+
+        <div class="insignias">
+            <div class="insigniashijo">
+                <img src="images/advice.png">
+            </div>
+
+            <div class="insigniashijo">
+                <img src="images/easiest.svg">
+            </div>
+
+            <div class="insigniashijo">
+                <img src="images/performer.svg">
+            </div>
+
+            <div class="insigniashijo">
+                <img src="images/trustpilot.png">
+            </div>
+
+        </div>
+
+        <a name="product"></a>
+        <h2>PRODUCTOS QUE OFRECEMOS</h2>
+        <div class="product">
+
+            <div class="producthijo">
+                <p>
+                    <b>Shared & WordPress</b><br><br>
+                    <img src="images/Wordpress.png"><br>
+                    Es una opción económica para sitios web más pequeños o en crecimiento que no requieren un alto nivel
+                    de recursos y está optimizado específicamente para sitios web creados con WordPress.
+                </p>
+            </div>
+
+            <div class="producthijo">
+                <p>
+                    <b>Reseller</b><br><br>
+                    <img src="images/reseller.png"><br>
+                    El Reseller Hosting le permite a un cliente comprar recursos de alojamiento web, como espacio en
+                    disco y ancho de banda, y luego revenderlos a otros usuarios.
+                </p>
+            </div>
+
+            <div class="producthijo">
+                <p>
+                    <b>Virtual Servers(VPS)</b><br><br>
+                    <img src="images/VirtualServer.png"><br>
+                    Los usuarios de VPS tienen un control más completo sobre su entorno de alojamiento. Pueden instalar
+                    y configurar su propio software, sistemas operativos, aplicaciones y ajustes de servidor según sus
+                    necesidades.
+                </p>
+            </div>
+
+            <div class="producthijo">
+                <p>
+                    <b>Dedicated CPU </b><br><br>
+                    <img src="images/cpudedica.png"><br>
+                    La CPU Dedicada puede brindar un mejor rendimiento para aplicaciones o sitios web que requieren una
+                    capacidad de procesamiento constante y significativa.
+
+                </p>
+            </div>
+
+        </div>
+
+        <a name="pricing"></a>
+        <h2>NUESTROS PLANES</h2>
+        <div class="planes">
+
+            <div class="planeshijo">
+                <ul type="circle">
+                    <i><b>Sitedust</b></i><br>
+                    <img src="images/bronce.png">
+                    <li>Unlimited Websites</li>
+                    <li>50GB SSD Storage</li>
+                    <li>50 cPanel Accounts</li>
+                    <li>3 TB Bandwidth</li>
+                    <b style="color:rgb(23, 182, 23)"><br><br>$21.00/mes<br><br></b>
+                    <a href="https://hostarmada.com/pricing/" target="_blank">
+                        <input type="button" id="btnComenzar1" name="btnComenzar1" value="COMENZAR">
+                    </a>
+                </ul>
+            </div>
+
+            <div class="planeshijo">
+                <ul type="circle">
+                    <i><b>ProtoSeller</b></i><br>
+                    <img src="images/platinum.png"><br>
+                    <li>Unlimited Websites</li>
+                    <li>80GB SSD Storage</li>
+                    <li>80 cPanel Accounts</li>
+                    <li>6 TB Bandwidth</li>
+                    <b style="color:rgb(23, 182, 23)"><br><br>$28.02/mes<br><br></b>
+                    <a href="https://hostarmada.com/pricing/" target="_blank">
+                        <input type="button" id="btnComenzar2" name="btnComenzar2" value="COMENZAR">
+                    </a>
+                </ul>
+            </div>
+
+            <div class="planeshijo">
+                <ul type="circle">
+                    <i><b>Web Giant</b></i><br>
+                    <img src="images/gold.png"><br>
+                    <li>Unlimited Websites</li>
+                    <li>110GB SSD Storage</li>
+                    <li>110 cPanel Accounts</li>
+                    <li>9 TB Bandwidth</li>
+                    <b style="color:rgb(23, 182, 23)"><br><br>$35.03/mes<br><br></b>
+                    <a href="https://hostarmada.com/pricing/" target="_blank">
+                        <input type="button" id="btnComenzar3" name="btnComenzar3" value="COMENZAR">
+                    </a>
+                </ul>
+            </div>
+
+            <div class="planeshijo">
+                <ul type="circle">
+                    <i><b>Site Nova</b></i><br>
+                    <img src="images/premium.png"><br>
+                    <li>Unlimited Websites</li>
+                    <li>200GB SSD Storage</li>
+                    <li>200 cPanel Accounts</li>
+                    <li>12 TB Bandwidth</li>
+                    <b style="color:rgb(23, 182, 23)"><br><br>$49.05/mes<br><br></b>
+                    <a href="https://hostarmada.com/pricing/" target="_blank">
+                        <input type="button" id="btnComenzar4" name="btnComenzar4" value="COMENZAR">
+                    </a>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <a name="contact"></a>
+        <h2>¡CONTACTA NUESTRO EQUIPO!</h2>
+        <div class="contactenos">
+
+            <div class="contactenoshijo">
+                <img style="width:800px; height: auto;" src="images/grupo.webp">
+            </div>
+
+            <div class="contactenoshijo">
+                <h3>ENVIANOS UN MENSAJE POR CORREO</h3>
+                <p>
+                    Si deseas saber mas sobre nuestros productos:<br>
+                    sales@hostarmada.com<br><br>
+                    Si deseas saber mas sobre nuestros precios y planes:<br>
+                    billing@hostarmada.com<br><br>
+                </p>
+                <h3>CHAT EN VIVO</h3>
+                <p>
+                    <img src="images/chat.png"><br>
+                    <a href="https://hostarmada.com/contact-us/" target="_blank">
+                        <input type="button" id="btnChat" name="btnChat" value="COMIENZA A CHATEAR">
+                    </a>
+                </p>
+                <h3>NUESTRA UBICACION</h3>
+                <p>
+                    <img src="images/location.png"><br>
+
+                    501 Silverside Rd, Wilmington, DE 19809, EE. UU.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d36736.83883046963!2d-75.51787007366683!3d39.789899071474316!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6e323e2cea63d%3A0x12a60f5af393e68f!2sHostArmada%20INC!5e0!3m2!1ses!2shn!4v1691983163168!5m2!1ses!2shn"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="piedepagina">
+
+            <div class="piedepaginahijo">
+                <p> Derechos Reservados 2023</p>
+            </div>
+
+            <div class="piedepaginahijo">
+                <p> Sitio Web con Motivos Educativos </p>
+            </div>
+
+            <div class="piedepaginahijo">
+                <p> Diseño por Milton Noel Paz </p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
